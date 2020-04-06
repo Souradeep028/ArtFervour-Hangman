@@ -1,6 +1,6 @@
 [{
-  "question": "The artist had a tumultuous relationship with Mexican muralist, Diego Rivera.",
-  "word": "the legend of zelda",
+  "question": "Born in Goa and brought up in a catholic household, this artist's work was filled with religious iconography.",
+  "word": "Francis Newton Souza",
   "hints": [
     "Known for her many portraits, self-portraits.",
     "One of Mexico's greatest artists.",
@@ -9,15 +9,24 @@
   "answer": [
     "F",
     "R",
+    "A",
+    "N",
+    "C",
     "I",
-    "D",
-    "A",
+    "S",
     " ",
-    "K",
-    "A",
-    "H",
-    "L",
-    "O"
+    "N",
+    "E",
+    "W",
+    "T",
+    "O",
+    "N",
+    " ",
+    "S",
+    "O",
+    "U",
+    "Z",
+    "A"
   ],
   "hintsUsed": 0,
   "newGame": true,
@@ -32,8 +41,48 @@
   "stickIndex": 0
 },
 {
-    "question": "This artist owns the rights to Vantablack, the blackest black ever made.",
-    "word": "Anish Kapoor",
+    "question": "The artist holds the record for the most expensive artwork sold at auction by an Indian artist.",
+    "word": "Vasudeo S. Gaitonde",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "V",
+      "A",
+      "S",
+      "U",
+      "D",
+      "E",
+      "O",
+      " ",
+      "S.",
+      " ",
+      "G",
+      "A",
+      "I",
+      "T",
+      "O",
+      "N",
+      "D",
+      "E"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "Although born in Budapest, the artist is considered one of the pioneers of Indian Modern Art.",
+    "word": "Amrita Sher-Gil",
     "hints": [
       "British-Indian sculptor",
       "Specializes in installation art and conceptual art.",
@@ -41,17 +90,268 @@
     ],
     "answer": [
       "A",
-      "N",
+      "M",
+      "R",
       "I",
+      "T",
+      "A",
+      " ",
       "S",
       "H",
+      "E",
+      "R",
+      "-",
+      "G",
+      "I",
+      "L"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "Many of the artist's abstract paintings were inspired by musical compositions.",
+    "word": "Wassily Kandinsky",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "W",
+      "A",
+      "S",
+      "S",
+      "I",
+      "L",
+      "Y",
       " ",
       "K",
       "A",
+      "N",
+      "D",
+      "I",
+      "N",
+      "S",
+      "K",
+      "Y"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "With his geometric abstract artworks, the artist was a pioneer of \"neo-plasticism\" and \"De Stijl\".",
+    "word": "Piet Mondrian",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
       "P",
+      "I",
+      "E",
+      "T",
+      " ",
+      "M",
+      "O",
+      "N",
+      "D",
+      "R",
+      "I",
+      "A",
+      "N"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "Part of the Baroque movement in Rome, the artist is revered for his use of \"chiarascuro\".",
+    "word": "Caravaggio",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "C",
+      "A",
+      "R",
+      "A",
+      "V",
+      "A",
+      "G",
+      "G",
+      "I",
+      "O"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "The artist once installed 24 blocks of ice in front of the Tate Modern as a part of his \"Ice Watch\" installation, to raise awareness about global warming.",
+    "word": "Olafur Eliasson",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "O",
+      "L",
+      "A",
+      "F",
+      "U",
+      "R",
+      " ",
+      "E",
+      "L",
+      "I",
+      "A",
+      "S",
+      "S",
+      "O",
+      "N"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "The artist currently holds the record for the most expensive work sold at auction by a living artist for his \"Rabbit\" sculpture.",
+    "word": "Jeff Koons",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "J",
+      "E",
+      "F",
+      "F",
+      " ",
+      "K",
       "O",
       "O",
-      "R"
+      "N",
+      "S"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "Considered by many as \"the Mother of American Modernism\", the artist was famous for her depiction of flowers and the Mexican landscape.",
+    "word": "Georgia O'Keeffe",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "G",
+      "E",
+      "O",
+      "R",
+      "G",
+      "I",
+      "A",
+      " ",
+      "O",
+      " ",
+      "K",
+      "E",
+      "E",
+      "F",
+      "F",
+      "E"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  },
+  {
+    "question": "The artist broke the record for the most expensive living female artist when her painting \"Propped\" sold for $12.4 million in 2018.",
+    "word": "Jenny Saville",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "J",
+      "E",
+      "N",
+      "N",
+      "Y",
+      " ",
+      "S",
+      "A",
+      "V",
+      "I",
+      "L",
+      "L",
+      "E"
     ],
     "hintsUsed": 0,
     "newGame": true,
