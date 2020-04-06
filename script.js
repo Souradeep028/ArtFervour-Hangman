@@ -1,5 +1,6 @@
 $('#alphabet').hide();
 $('.results-social').hide();
+$('#moreGames').hide();
 
 $('button').on('click', handleClick);
 
@@ -141,7 +142,7 @@ function gameOver(win) {
 
   hangman.newGame = false;
   $('#newGame').show();
-  $('#moreGames').show();
+  $('#moreGames').show().click(()=>window.location='https://www.artfervour.com/af-games');
   $('.results-social').show();
   $('#alphabet').hide();
   $('#question-text').hide();
