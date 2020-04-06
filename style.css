@@ -92,19 +92,9 @@ body {
 }
 
 .btn-info{
-  color: #000;
-  background: #fff;
+  color: #000 !important;
+  background: #fff !important;
   border-color: #000 !important;
-}
-
-#newGame{
-  color: #000;
-  background: #fff;
-}
-
-#newGame:hover{
-  color: #fff;
-  background: #000;
 }
 
 .disableClick {
@@ -163,6 +153,32 @@ body {
   margin: 0.5rem auto;
   margin-top: 1.7rem;
   height: 40px;
+  color: #000;
+  background: #fff;
+  width: 10rem;
+}
+
+
+#newGame:hover{
+  color: #fff;
+  background: #000;
+}
+
+#moreGames{
+  display: block;
+  text-align: center;
+  margin: 0.5rem auto;
+  margin-top: 1.7rem;
+  height: 40px;
+  width: 10rem;
+  color: #000;
+  background: #fff;
+  width: 10rem;
+}
+
+#moreGames:hover{
+  color: #fff;
+  background: #000;
 }
 
 #noose {

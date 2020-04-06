@@ -43,6 +43,7 @@ function getWord() {
 function resetGame() {
   //reset text, stick figure, button styles
   $('#newGame').hide();
+  $('#moreGames').hide();
   $('.results-social').hide();
   $('#alphabet').show();
   $('#question-text').show();
@@ -140,6 +141,7 @@ function gameOver(win) {
 
   hangman.newGame = false;
   $('#newGame').show();
+  $('#moreGames').show();
   $('.results-social').show();
   $('#alphabet').hide();
   $('#question-text').hide();
