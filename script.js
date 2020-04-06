@@ -141,7 +141,7 @@ function checkForWin() {
 function gameOver(win) {
 
   hangman.newGame = false;
-  $('#newGame').show();
+  $('#newGame').show().text('New Game');
   $('#moreGames').show().click(()=>window.location='https://www.artfervour.com/af-games');
   $('.results-social').show();
   $('#alphabet').hide();
