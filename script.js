@@ -122,10 +122,10 @@ function addToHangman() {
 function showHint(index) {  
   hangman.hintsUsed += 1;
   
-  let newHint = `<p class="hint-text badge">${index + 1}/3 - ${hangman.hints[index]}</p>`;
+  let newHint = `<p class="hint-text badge">${index + 1}/2 - ${hangman.hints[index]}</p>`;
   $('#hintParent').append(newHint);
     
-  if (hangman.hintsUsed === 3) {
+  if (hangman.hintsUsed === 2) {
     $('#hint').removeClass().addClass('btn btn-secondary disableClick');
   }
 }
