@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>AF Hangman</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=no">
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <img src="https://guesstheartist.netlify.com/img/af.png" alt="Logo" class="logo">
+<div class="container-fluid small-wrap">
+  <div id="hangman-figure">
+    <div id="gallow">
+      <div id="pole">
+        <div id="noose"></div>
+        <div id="diagonal"></div>
+        <div id="base"></div>
+      </div>
+    </div>
+    <div id="stick-figure">
+      <svg height="150" width="150">
+        <circle id="hangman-head"      class="show-hangman" cx="25" cy="25" r="10"/>
+        <line   id="hangman-body"      class="show-hangman" x1="25" y1="34" x2="25" y2="85"/>
+        <line   id="hangman-leftArm"   class="show-hangman" x1="0" y1="70" x2="25" y2="40"/>
+        <line   id="hangman-rightArm"  class="show-hangman" x1="25" y1="40" x2="55" y2="70"/>
+        <line   id="hangman-leftLeg"   class="show-hangman" x1="25" y1="85" x2="0" y2="120"/>
+        <line   id="hangman-rightLeg"  class="show-hangman" x1="25" y1="85" x2="55" y2="120"/>
+      </svg>
+    </div>
+  </div>
+  <div id="word-letters">
+    <div class="guessed-right">H</div>&emsp;
+    <div class="guessed-right">A</div>&emsp;
+    <div class="guessed-right">N</div>&emsp;
+    <div class="guessed-right">G</div>&emsp;
+    <div class="guessed-right">M</div>&emsp;
+    <div class="guessed-right">A</div>&emsp;
+    <div class="guessed-right">N</div>&emsp;
+  </div>
+</div>
+<div id="message-category">
+  <p id="category-label" class="badge">
+    <span>Click New Game</span>
+  </p>
+  <p id="question-text"></p>
+  <div id="hintParent" class="hint-parent">
+    <p id="hintText" class="text-left badge badge-warning"></p>
+  </div>
+</div>
+<div id="alphabet" class="small-wrap">
+  <div class="row no-gutters">
+    <button id="A" class="btn btn-primary">A</button>
+    <button id="B" class="btn btn-primary">B</button>
+    <button id="C" class="btn btn-primary">C</button>
+    <button id="D" class="btn btn-primary">D</button>
+    <button id="E" class="btn btn-primary">E</button>
+    <button id="F" class="btn btn-primary">F</button>
+    <button id="G" class="btn btn-primary">G</button>
+  </div>
+  <div class="row no-gutters">
+    <button id="H" class="btn btn-primary">H</button>
+    <button id="I" class="btn btn-primary">I</button>
+    <button id="J" class="btn btn-primary">J</button>
+    <button id="K" class="btn btn-primary">K</button>
+    <button id="L" class="btn btn-primary">L</button>
+    <button id="M" class="btn btn-primary">M</button>
+    <button id="N" class="btn btn-primary">N</button>
+  </div>
+  <div class="row no-gutters">
+    <button id="O" class="btn btn-primary">O</button>
+    <button id="P" class="btn btn-primary">P</button>
+    <button id="Q" class="btn btn-primary">Q</button>
+    <button id="R" class="btn btn-primary">R</button>
+    <button id="S" class="btn btn-primary">S</button>
+    <button id="T" class="btn btn-primary">T</button>
+    <button id="U" class="btn btn-primary">U</button>
+  </div>
+  <div class="row no-gutters">
+    <button id="V" class="btn btn-primary">V</button>
+    <button id="W" class="btn btn-primary">W</button>
+    <button id="X" class="btn btn-primary">X</button>
+    <button id="Y" class="btn btn-primary">Y</button>
+    <button id="Z" class="btn btn-primary">Z</button>
+    <button id="hint" class="btn btn-primary">Hint</button>
+  </div>
+</div>
+<button id="newGame" class="btn btn-secondary btn-sm">New Game</button>
+
+<div class="results-social">
+  <div id="social-text">Did you like the game? Share your results with your friends, so they can give it a shot!
+  </div>
+  <div class="icon-container">
+    <a href="whatsapp://send?text=https://guesstheartist.artfervour.ga/"><img src="https://guesstheartist.netlify.com/whatsapp.png" style="height: 34px; width: 34px; display: inline-block; margin-top: 0px; margin-right: 24px;" alt=""></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gamed.artfervour.ga/"><img src="https://guesstheartist.netlify.com/fb-logo-black-circle.png" style="height: 32px; width: 32px; display: inline-block; margin-top: 0px" alt=""></a>
+  </div>
+</div>
+
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

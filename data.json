@@ -1,0 +1,67 @@
+[{
+  "question": "The artist had a tumultuous relationship with Mexican muralist, Diego Rivera.",
+  "word": "the legend of zelda",
+  "hints": [
+    "Known for her many portraits, self-portraits.",
+    "One of Mexico's greatest artists.",
+    "Works inspired by the nature and artifacts of Mexico."
+  ],
+  "answer": [
+    "F",
+    "R",
+    "I",
+    "D",
+    "A",
+    " ",
+    "K",
+    "A",
+    "H",
+    "L",
+    "O"
+  ],
+  "hintsUsed": 0,
+  "newGame": true,
+  "stickFigure": [
+    "hangman-head",
+    "hangman-body",
+    "hangman-leftArm",
+    "hangman-rightArm",
+    "hangman-leftLeg",
+    "hangman-rightLeg"
+  ],
+  "stickIndex": 0
+},
+{
+    "question": "This artist owns the rights to Vantablack, the blackest black ever made.",
+    "word": "Anish Kapoor",
+    "hints": [
+      "British-Indian sculptor",
+      "Specializes in installation art and conceptual art.",
+      "Artists don't make objects. Artists make mythologies."
+    ],
+    "answer": [
+      "A",
+      "N",
+      "I",
+      "S",
+      "H",
+      " ",
+      "K",
+      "A",
+      "P",
+      "O",
+      "O",
+      "R"
+    ],
+    "hintsUsed": 0,
+    "newGame": true,
+    "stickFigure": [
+      "hangman-head",
+      "hangman-body",
+      "hangman-leftArm",
+      "hangman-rightArm",
+      "hangman-leftLeg",
+      "hangman-rightLeg"
+    ],
+    "stickIndex": 0
+  }]
