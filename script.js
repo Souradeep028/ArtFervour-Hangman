@@ -161,17 +161,3 @@ function gameOver(win) {
     mssg.append(lost);
   }
 }
-
-/*
-initialize requests /word endpoint, response object is... 
-  newGame = {
-    category: random category (movie, sport, celebrity, app, game, music),
-    word: random element from category,
-    answer: str array of word characters; letters are uppercase,
-    newGame: true (enables checking guess/button clicks),
-    hints: str array with 3 str hint elements,
-    hintsUsed: 0 (hints used of 3),
-    stickFigure: str array of stick figure id's (head, body, arms, legs),
-    stickIndex: 0 (stick figure parts drawn/incorrect guesses of 6)
-  }
-*/

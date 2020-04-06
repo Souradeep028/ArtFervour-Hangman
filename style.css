@@ -304,6 +304,10 @@ body {
   #alphabet > .row > .btn-primary {
     width: 2.4rem;
   }
+
+  #alphabet > .row > .btn-secondary {
+    width: 2.4rem;
+  }
   
   #alphabet > .row > #hint.btn-secondary {
     width: 5.3rem;
