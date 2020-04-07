@@ -7,6 +7,8 @@ body {
   background-color: #FFF;
   font-size: 1rem;
   box-sizing: border-box !important;
+  background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
+  background-size: 146vh 220vw;
 }
 
 p {
@@ -99,13 +101,13 @@ p {
 
 .btn-primary {
   color: #000;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   border-color: #000;
 }
 
 .btn-info{
   color: #000 !important;
-  background: #fff !important;
+  background: #ffffff00 !important;
   border-color: #000 !important;
 }
 
@@ -167,7 +169,7 @@ p {
   margin-top: 1.7rem;
   height: 40px;
   color: #000;
-  background: #fff;
+  background: #ffffff00;
   width: 10rem;
 }
 
@@ -185,7 +187,7 @@ p {
   height: 40px;
   width: 10rem;
   color: #000;
-  background: #fff;
+  background: #ffffff00;
   width: 10rem;
 }
 
@@ -302,6 +304,45 @@ p {
   }
   100% {
     transform: translate3d(-4px, 0px, 0px) skew(-5deg);
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #alphabet > .row > button {
+    height: 2.4rem;
+    margin: 0.25rem;
+  }
+
+  #alphabet > .row > button {
+    width: 2.4rem;
+  }
+  #alphabet > .row > .btn-primary {
+    width: 2.4rem;
+  }
+
+  #alphabet > .row > .btn-secondary {
+    width: 2.4rem;
+  }
+  
+  #alphabet > .row > #hint.btn-secondary {
+    width: 5.3rem;
+  }
+  
+  #alphabet > .row > #hint.btn-info {
+    width: 5.3rem;
+  }
+
+  .hint-parent {
+    width: 310px;
+    margin: 0 auto;
+ }
+
+ .hint-text{
+   font-size: 12px;
+ }
+
+ #message-category {
+  height: 64px;
   }
 }
 
