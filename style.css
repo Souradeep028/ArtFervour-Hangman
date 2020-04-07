@@ -340,7 +340,7 @@ body {
   }
 
   #alphabet > .row > button {
-    width: 2rem;
+    width: 2rem; 
   }
   #alphabet > .row > .btn-primary {
     width: 2rem;
