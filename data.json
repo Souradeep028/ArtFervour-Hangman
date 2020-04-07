@@ -216,7 +216,7 @@
     "stickIndex": 0
   },
   {
-    "question": "The artist once installed 24 blocks of ice in front of the Tate Modern as a part of his \"Ice Watch\" installation, to raise awareness about global warming.",
+    "question": "The artist once installed 24 blocks of ice in front of the Tate Modern as a part of his \"Ice Watch\" installation.",
     "word": "Olafur Eliasson",
     "hints": [
       "The Icelandic artist was actually born in Copenhagen, Denmark.",
@@ -306,49 +306,6 @@
       "F",
       "F",
       "E"
-    ],
-    "hintsUsed": 0,
-    "newGame": true,
-    "stickFigure": [
-      "hangman-head",
-      "hangman-body",
-      "hangman-leftArm",
-      "hangman-rightArm",
-      "hangman-leftLeg",
-      "hangman-rightLeg"
-    ],
-    "stickIndex": 0
-  },
-  {
-    "question": "This movement was divided into two categories, Action painting and Colour Field painting.",
-    "word": "Abstract Expressionism",
-    "hints": [
-      "Jackson Pollock and Mark Rothko were pioneers of this movement.",
-      "It began in the late 1940s immediately after the second world war, as a reaction to it"
-    ],
-    "answer": [
-      "A",
-      "B",
-      "S",
-      "T",
-      "R",
-      "A",
-      "C",
-      "T",
-      " ",
-      "E",
-      "X",
-      "P",
-      "R",
-      "E",
-      "S",
-      "S",
-      "I",
-      "O",
-      "N",
-      "I",
-      "S",
-      "M"
     ],
     "hintsUsed": 0,
     "newGame": true,
