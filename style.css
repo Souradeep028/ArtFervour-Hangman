@@ -14,6 +14,12 @@ p {
   margin-bottom: 0.4rem;
 }
 
+#hangman-head {
+  fill: #EC7358;
+  stroke: #EC7358;
+  stroke-width: 3;
+}
+
 .logo {
   margin: 0 auto;
   display: block;
