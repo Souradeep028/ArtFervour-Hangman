@@ -4,6 +4,7 @@
   }
 } */
 body {
+  min-height: 96vh;
   background-color: #FFF;
   font-size: 1rem;
   box-sizing: border-box !important;
