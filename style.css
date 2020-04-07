@@ -268,6 +268,7 @@ p {
 .hint-parent{
   width: 346px;
   margin: 0 auto;
+  font-size: 12px;
 }
 
 #question-text{
@@ -396,7 +397,7 @@ p {
  }
 
  .hint-text{
-   font-size: 12px;
+   font-size: 12.4px;
  }
 
  #message-category {
