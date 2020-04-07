@@ -122,7 +122,7 @@ function addToHangman() {
 function showHint(index) {  
   hangman.hintsUsed += 1;
   
-  let newHint = `<p class="hint-text badge">${index + 1}/2 - ${hangman.hints[index]}</p>`;
+  let newHint = `<p><span>${index + 1}/2 - </span>${hangman.hints[index]}</p>`;
   $('#hintParent').append(newHint);
     
   if (hangman.hintsUsed === 2) {

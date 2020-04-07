@@ -133,13 +133,14 @@ body {
   display: block;
   margin-bottom: 0.25rem;
   text-align: left;
+  font-size: 11.6px;
 }
 
 #message-category {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 6.8rem;
-  height: 30px;
+  height: 40px;
 }
 
 #newCategory {
@@ -316,6 +317,19 @@ body {
   #alphabet > .row > #hint.btn-info {
     width: 5.3rem;
   }
+
+  .hint-parent {
+    width: 310px;
+    margin: 0 auto;
+ }
+
+ .hint-text{
+   font-size: 12px;
+ }
+
+ #message-category {
+  height: 56px;
+  }
 }
 
 @media screen and (max-width: 320px){
@@ -335,8 +349,25 @@ body {
   #alphabet > .row > .btn-secondary {
     width: 2rem;
   }
+
+  #alphabet > .row > #hint.btn-secondary {
+    width: 4.57rem;
+  }
   
   #alphabet > .row > #hint.btn-info {
     width: 4.55rem;
   }
+
+  .hint-parent {
+    width: 268px;
+    margin: 0 auto;
+ }
+
+ .hint-text{
+   font-size: 12px;
+ }
+
+ #message-category {
+  height: 54px;
+}
 }
