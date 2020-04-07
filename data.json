@@ -2,9 +2,8 @@
   "question": "Born in Goa and brought up in a catholic household, this artist's work was filled with religious iconography.",
   "word": "Francis Newton Souza",
   "hints": [
-    "Known for her many portraits, self-portraits.",
-    "One of Mexico's greatest artists."
-
+    "Brought up in a catholic household, this artist's work was filled with religious iconography.",
+    "The artist's painting \"Birth\" sold for $4 million (including buyer's premium) at a Christie's auction in 2015."
   ],
   "answer": [
     "F",
@@ -41,32 +40,23 @@
   "stickIndex": 0
 },
 {
-    "question": "The artist holds the record for the most expensive artwork sold at auction by an Indian artist.",
-    "word": "Vasudeo S. Gaitonde",
+    "question": "This art movement was characterized by unusual, fantastical and dreamlike figures/motifs.",
+    "word": "Surrealism",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
-
+      "Salvador Dali, Andre Breton and Max Ernst are some notable figures who were a part of this movement.",
+      "The movement began in the 1920s."
     ],
     "answer": [
-      "V",
-      "A",
       "S",
       "U",
-      "D",
+      "R",
+      "R",
       "E",
-      "O",
-      " ",
-      "S",
-      " ",
-      "G",
       "A",
+      "L",
       "I",
-      "T",
-      "O",
-      "N",
-      "D",
-      "E"
+      "S",
+      "M"
     ],
     "hintsUsed": 0,
     "newGame": true,
@@ -84,8 +74,8 @@
     "question": "Although born in Budapest, the artist is considered one of the pioneers of Indian Modern Art.",
     "word": "Amrita Sher Gil",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "The artist passed away at the early age of 28.",
+      "The artist traveled to various countries such as Turkey, France and India."
 
     ],
     "answer": [
@@ -121,8 +111,8 @@
     "question": "Many of the artist's abstract paintings were inspired by musical compositions.",
     "word": "Wassily Kandinsky",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "The artist was an early champion of abstract or non-figurative art.",
+      "The artist was born in Moscow, Russia."
     ],
     "answer": [
       "W",
@@ -156,26 +146,28 @@
     "stickIndex": 0
   },
   {
-    "question": "With his geometric abstract artworks, the artist was a pioneer of \"neo-plasticism\" and \"De Stijl\".",
-    "word": "Piet Mondrian",
+    "question": "Although there are many versions of this artwork, the original is a 15th century mural.",
+    "word": "The Last Supper",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "The original is housed in the the refectory of the Convent of Santa Maria delle Grazie in Milan, Italy.",
+      "It was painted by Leonardo da Vinci."
     ],
     "answer": [
-      "P",
-      "I",
+      "T",
+      "H",
       "E",
+      " ",
+      "L",
+      "A",
+      "S",
       "T",
       " ",
-      "M",
-      "O",
-      "N",
-      "D",
-      "R",
-      "I",
-      "A",
-      "N"
+      "S",
+      "U",
+      "P",
+      "P",
+      "E",
+      "R"
     ],
     "hintsUsed": 0,
     "newGame": true,
@@ -190,23 +182,26 @@
     "stickIndex": 0
   },
   {
-    "question": "Part of the Baroque movement in Rome, the artist is revered for his use of \"chiarascuro\".",
-    "word": "Caravaggio",
+    "question": "This art movement was characterized by \"en plein air\" (open-air) painting.",
+    "word": "Impressionism",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "Claude Monet and Edouard Manet were associated with this movement.",
+      "Scapturing the momentary and fleeting effects of light and colour."
     ],
     "answer": [
-      "C",
-      "A",
-      "R",
-      "A",
-      "V",
-      "A",
-      "G",
-      "G",
       "I",
-      "O"
+      "M",
+      "P",
+      "R",
+      "E",
+      "S",
+      "S",
+      "I",
+      "O",
+      "N",
+      "I",
+      "S",
+      "M"
     ],
     "hintsUsed": 0,
     "newGame": true,
@@ -224,8 +219,8 @@
     "question": "The artist once installed 24 blocks of ice in front of the Tate Modern as a part of his \"Ice Watch\" installation, to raise awareness about global warming.",
     "word": "Olafur Eliasson",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "The Icelandic artist was actually born in Copenhagen, Denmark.",
+      "Nature, environmental conservation and climate change have been recurring themes in the artist's installations."
     ],
     "answer": [
       "O",
@@ -260,8 +255,8 @@
     "question": "The artist currently holds the record for the most expensive work sold at auction by a living artist for his \"Rabbit\" sculpture.",
     "word": "Jeff Koons",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "The artist is popular for his stainless steel animal sculptures.",
+      "The artist faced a lot of criticism for his public installation, \"Bouquet of Tulips\"."
     ],
     "answer": [
       "J",
@@ -291,8 +286,8 @@
     "question": "Considered by many as \"the Mother of American Modernism\", the artist was famous for her depiction of flowers and the Mexican landscape.",
     "word": "Georgia O'Keeffe",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "The artist was famous for her depiction of flowers and the Mexican landscape.",
+      "The artist was 99 years old when she passed in 1986."
     ],
     "answer": [
       "G",
@@ -325,26 +320,35 @@
     "stickIndex": 0
   },
   {
-    "question": "The artist broke the record for the most expensive living female artist when her painting \"Propped\" sold for $12.4 million in 2018.",
-    "word": "Jenny Saville",
+    "question": "This movement was divided into two categories, Action painting and Colour Field painting.",
+    "word": "Abstract Expressionism",
     "hints": [
-      "British-Indian sculptor",
-      "Specializes in installation art and conceptual art."
+      "Jackson Pollock and Mark Rothko were pioneers of this movement.",
+      "It began in the late 1940s immediately after the second world war, as a reaction to it"
     ],
     "answer": [
-      "J",
-      "E",
-      "N",
-      "N",
-      "Y",
-      " ",
-      "S",
       "A",
-      "V",
+      "B",
+      "S",
+      "T",
+      "R",
+      "A",
+      "C",
+      "T",
+      " ",
+      "E",
+      "X",
+      "P",
+      "R",
+      "E",
+      "S",
+      "S",
       "I",
-      "L",
-      "L",
-      "E"
+      "O",
+      "N",
+      "I",
+      "S",
+      "M"
     ],
     "hintsUsed": 0,
     "newGame": true,
