@@ -67,18 +67,11 @@ function updateCategory(val) {
 }
 
 function appendSpaces() {
-  /*
-    3 kinds of spaces:
-      - letters:     draw line, hide letter
-      - punctuation: draw line, show punctuation
-      - whitespace:  no line, just blank space
-  */
   const createSpace = (el, i) => {
     let isPunct = /\W/.test(el),
         id = isPunct ? 'punct' + i : el.toLowerCase() + i,
         className = isPunct ? 'show-letter punct' : 'hide-letter',
         span = `<span id=${id} class="${className}">${el}</span>`;
-    //return `<div class="col-sm-1 mx-1 guessed-right">${span}</div>`;
     return `<div class="guessed-right">${span}</div>`;
   };
     
