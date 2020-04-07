@@ -182,7 +182,7 @@
     "stickIndex": 0
   },
   {
-    "question": "This art movement was characterized by \"en plein air\" (open-air) painting.",
+    "question": "This art movement was characterized by \"en plein air\"<br>(open-air) painting.",
     "word": "Impressionism",
     "hints": [
       "Claude Monet and Edouard Manet were associated with this movement.",
