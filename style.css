@@ -32,8 +32,9 @@ p {
 .logo {
   margin: 0 auto;
   display: block;
-  margin-bottom: 24px;
-  height: 48px;
+  margin-bottom: -12px;
+  height: 64px;
+  padding-top: 16px;
 }
 #alphabet {
   text-align: center;
