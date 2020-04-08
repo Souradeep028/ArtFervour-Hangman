@@ -5,21 +5,21 @@ $('#moreGames').hide();
 $('button').on('click', handleClick);
 
 var hangman = {};
-let hangmanObject={};
-let quesIndex=0;
-let scoreCounter=0;
-let questionCounter=0;
+let hangmanObject = {};
+let quesIndex = 0;
+let scoreCounter = 0;
+let questionCounter = 0;
 
 function handleClick(e) {
   let id = e.target.id,
-      buttonId = $('#newGame');
-  
+    buttonId = $('#newGame');
+
   let action = {
     newGame: () => initialize(),
-    letter:  () => processGuess(id),
-    hint:    () => showHint(hangman.hintsUsed)
+    letter: () => processGuess(id),
+    hint: () => showHint(hangman.hintsUsed)
   };
-  
+
   if (hangman.newGame) {
     id.length > 1 ? action[id]() : action.letter();
   } else {
@@ -38,11 +38,11 @@ function initialize() {
     updateCategory(hangman.question)
     appendSpaces();
   });
+  console.log(quesIndex);
 }
 
 async function getWord() {
   questionCounter = fetch("data.json").then((res) => res.json()).then(data => questionCounter = data.length);
-
   return fetch("data.json")
     .then((res) => res.json())
     .then((data) => data[quesIndex++]);
@@ -64,7 +64,6 @@ function resetGame() {
   $('.letter').removeClass().addClass('btn btn-primary');
   $('#hint').removeClass().addClass('btn btn-info');
   //request new word
-  console.log(questionCounter);
   return new Promise(resolve => resolve(getWord()))
 }
 
@@ -77,12 +76,12 @@ function updateCategory(val) {
 function appendSpaces() {
   const createSpace = (el, i) => {
     let isPunct = /\W/.test(el),
-        id = isPunct ? 'punct' + i : el.toLowerCase() + i,
-        className = isPunct ? 'show-letter punct' : 'hide-letter',
-        span = `<span id=${id} class="${className}">${el}</span>`;
+      id = isPunct ? 'punct' + i : el.toLowerCase() + i,
+      className = isPunct ? 'show-letter punct' : 'hide-letter',
+      span = `<span id=${id} class="${className}">${el}</span>`;
     return `<div class="guessed-right">${span}</div>`;
   };
-    
+
   $('#word-letters').append(hangman.answer.map((el, i) => {
     return /\s/.test(el) ? '&emsp;' : createSpace(el, i);
   }));
@@ -90,10 +89,10 @@ function appendSpaces() {
 
 function processGuess(id) {
   let guessLetter = $('#' + id),
-      letterInWord = hangman.answer.includes(id);
-  
+    letterInWord = hangman.answer.includes(id);
+
   guessLetter.removeClass().addClass('btn btn-secondary letter disableClick');
-    
+
   letterInWord ? showLetter(id) : addToHangman();
 }
 
@@ -103,29 +102,33 @@ function showLetter(id) {
       $('#' + id.toLowerCase() + i).removeClass().addClass('show-letter');
     }
   }
-  
   checkForWin();
 }
 
 function addToHangman() {
   let lastIncorrect = hangman.stickIndex === 5,
-      stickPart = hangman.stickFigure[hangman.stickIndex];
-  
+    stickPart = hangman.stickFigure[hangman.stickIndex];
+
   $('#' + stickPart).removeClass('hide-hangman').addClass('show-hangman');
-    
+
   if (lastIncorrect) {
-    gameOver();
-  } else {
+    $('.hide-letter').removeClass().addClass('show-letter');
+    if (quesIndex < questionCounter) {
+      setTimeout(() => initialize(), 3500);
+    }
+    else gameOver();
+  } 
+  else {
     hangman.stickIndex += 1;
   }
 }
 
-function showHint(index) {  
+function showHint(index) {
   hangman.hintsUsed += 1;
-  
+
   let newHint = `<p><span>${index + 1}/2 - </span>${hangman.hints[index]}</p>`;
   $('#hintParent').append(newHint);
-    
+
   if (hangman.hintsUsed === 2) {
     $('#hint').removeClass().addClass('btn btn-secondary disableClick');
   }
@@ -133,32 +136,34 @@ function showHint(index) {
 
 function checkForWin() {
   let playerWon = $('.guessed-right > .hide-letter').length === 0;
-  
-  if (playerWon) {
-    gameOver('win');
-  }
-}
 
-function gameOver(win) {
-  console.log(quesIndex);
-  hangman.newGame = false;
-  $('#newGame').show().text('New Game');
-  $('#moreGames').show().click(()=>window.location='https://www.artfervour.com/af-games');
-  $('.results-social').show();
-  $('#alphabet').hide();
-  $('#question-text').hide();
-  $('#hintParent').hide();
-  $('.hide-letter').removeClass().addClass('show-letter');
-    
-  let mssg = $('#category-label'),
+  if (playerWon) {
+    ++scoreCounter;
+    if (quesIndex < questionCounter) {
+      setTimeout(() => initialize(), 2500);
+    }
+    else gameOver('win');
+  } 
+}
+  function gameOver(win) {
+    hangman.newGame = false;
+    $('#newGame').show().text('New Game');
+    $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
+    $('.results-social').show();
+    $('#alphabet').hide();
+    $('#question-text').hide();
+    $('#hintParent').hide();
+    // $('.hide-letter').removeClass().addClass('show-letter');
+
+    let mssg = $('#category-label'),
       won = `<span>You Won!<br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
       lost = `<span>You Lost!<br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
-    
-  mssg.empty().removeClass('badge-secondary');
-    
-  if (win) {
-    mssg.append(won);
-  } else {
-    mssg.append(lost);
+
+    mssg.empty().removeClass('badge-secondary');
+
+    if (win) {
+      mssg.append(won);
+    } else {
+      mssg.append(lost);
+    }
   }
-}
