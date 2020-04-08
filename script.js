@@ -105,7 +105,6 @@ function showLetter(id) {
       $('#' + id.toLowerCase() + i).removeClass().addClass('show-letter');
     }
   }
-  $('.btn').removeClass().addClass('btn btn-secondary disableClick');
   checkForWin();
 }
 
@@ -144,6 +143,7 @@ function checkForWin() {
 
   if (playerWon) {
     ++scoreCounter;
+    $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 6000);
     }
