@@ -50,6 +50,7 @@ async function getWord() {
 
 function resetGame() {
   //reset text, stick figure, button styles
+  $('.btn').removeClass().addClass('btn btn-primary');
   $('#newGame').hide();
   $('#moreGames').hide();
   $('.results-social').hide();
@@ -113,6 +114,7 @@ function addToHangman() {
 
   if (lastIncorrect) {
     $('.hide-letter').removeClass().addClass('show-letter');
+    $('.btn').removeClass().addClass('btn btn-primary disableClick');
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 3500);
     }
