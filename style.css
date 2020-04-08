@@ -338,12 +338,13 @@ p {
 @media screen and (min-width: 1024px){
 
   body{
-    background: url(./bodybg01.jpg);
+    background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
     background-size: cover;
     min-height: 100vh;
   }
 
   .main-container{
+    background: none;
     background-size: 164vh;
     margin: 0px auto;
     width: 481px;
