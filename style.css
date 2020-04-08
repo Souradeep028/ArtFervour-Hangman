@@ -32,9 +32,10 @@ p {
 .logo {
   margin: 0 auto;
   display: block;
-  margin-bottom: 4px;
-  height: 64px;
-  padding-top: 16px;
+  margin-bottom: 36px;
+  height: 72px;
+  padding-top: 20px;
+
 }
 
 #alphabet {
