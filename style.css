@@ -8,8 +8,11 @@ body {
   background-color: #FFF;
   font-size: 1rem;
   box-sizing: border-box !important;
+
+}
+
+.main-container{
   background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
-  background-size: 146vh 220vw;
 }
 
 p {
@@ -329,6 +332,15 @@ p {
 }
 
 @media screen and (min-width: 1024px){
+
+  .main-container{
+    background-size: 140vh;
+    margin: -30px auto;
+    width: 481px;
+    height: 103vh;
+    padding-top: 60px;
+  }
+
   #alphabet > .row > button {
     height: 2.4rem;
     margin: 0.25rem;
@@ -367,7 +379,17 @@ p {
   }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 420px){
+
+  .main-container {
+    /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
+    /* background-size: 94vh; */
+    height: 116vh;
+    margin-top: -31px;
+    background-size: cover;
+    padding-top: 50px;
+}
+
   #alphabet > .row > button {
     height: 2.4rem;
     margin: 0.25rem;
@@ -407,6 +429,7 @@ p {
 }
 
 @media screen and (max-width: 320px){
+
   #alphabet > .row > button {
     height: 2rem;
     margin: 0.25rem;
