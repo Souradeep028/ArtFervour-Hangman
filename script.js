@@ -145,7 +145,7 @@ function checkForWin() {
     ++scoreCounter;
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 6000);
+      setTimeout(() => initialize(), 4500);
     }
     else gameOver('win');
   } 
