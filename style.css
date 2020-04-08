@@ -116,6 +116,16 @@ p {
   font-weight: 500;
 }
 
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+  background-color: rgba(0, 0, 0, 0) !important;
+  box-shadow:none !important;
+  outline:0px !important;
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
 .btn-primary1 {
   color: #000;
   background-color: #ffffff00;
