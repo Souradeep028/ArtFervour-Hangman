@@ -118,10 +118,10 @@ function addToHangman() {
     $('.hide-letter').removeClass().addClass('show-letter');
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 6000);
+      setTimeout(() => initialize(), 4000);
     }
     else gameOver();
-  } 
+  }
   else {
     hangman.stickIndex += 1;
   }
@@ -145,31 +145,31 @@ function checkForWin() {
     ++scoreCounter;
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 4500);
+      setTimeout(() => initialize(), 4000);
     }
     else gameOver('win');
-  } 
-}
-  function gameOver(win) {
-    hangman.newGame = false;
-    $('.btn').removeClass().addClass('btn btn-primary').re;
-    $('#newGame').show().text('New Game').unbind().click(() => window.location.reload());
-    $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
-    $('.results-social').show();
-    $('#alphabet').hide();
-    $('#question-text').hide();
-    $('#hintParent').hide();
-    // $('.hide-letter').removeClass().addClass('show-letter');
-
-    let mssg = $('#category-label'),
-      won = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
-      lost = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
-
-    mssg.empty().removeClass('badge-secondary');
-
-    if (win) {
-      mssg.append(won);
-    } else {
-      mssg.append(lost);
-    }
   }
+}
+function gameOver(win) {
+  hangman.newGame = false;
+  $('.btn').removeClass().addClass('btn btn-primary').re;
+  $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; window.location.reload() });
+  $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
+  $('.results-social').show();
+  $('#alphabet').hide();
+  $('#question-text').hide();
+  $('#hintParent').hide();
+  // $('.hide-letter').removeClass().addClass('show-letter');
+
+  let mssg = $('#category-label'),
+    won = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
+    lost = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
+
+  mssg.empty().removeClass('badge-secondary');
+
+  if (win) {
+    mssg.append(won);
+  } else {
+    mssg.append(lost);
+  }
+}
