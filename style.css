@@ -116,6 +116,14 @@ p {
   font-weight: 500;
 }
 
+.btn-primary1 {
+  color: #000;
+  background-color: #ffffff00;
+  border-color: #000;
+  border-width: 1.5px;
+  font-weight: 500;
+}
+
 .btn-info{
   color: #000 !important;
   background: #ffffff00 !important;

@@ -52,7 +52,6 @@ async function getWord() {
 
 function resetGame() {
   //reset text, stick figure, button styles
-  $('.btn').removeClass().addClass('btn btn-primary');
   $('#newGame').hide();
   $('#moreGames').hide();
   $('.results-social').hide();
@@ -64,6 +63,7 @@ function resetGame() {
   $('svg > circle, line').removeClass().addClass('hide-hangman');
   $('#category-label').removeClass().addClass('badge').text('Loading...');
   $('#hintParent').empty();
+  $('.btn').removeClass().addClass('btn btn-primary');
   $('.letter').removeClass().addClass('btn btn-primary');
   $('#hint').removeClass().addClass('btn btn-info');
   //request new word
@@ -162,8 +162,8 @@ function gameOver(win) {
   // $('.hide-letter').removeClass().addClass('show-letter');
 
   let mssg = $('#category-label'),
-    won = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
-    lost = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
+    won = `<span><br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    lost = `<span><br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
 
   mssg.empty().removeClass('badge-secondary');
 
