@@ -379,12 +379,32 @@ p {
   }
 }
 
-@media screen and (max-width: 420px){
+
+@media screen and (max-width: 414px){
+  .main-container {
+    /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
+    /* background-size: 94vh; */
+    height: 104.2vh;
+    margin-top: -31px;
+    background-size: cover;
+    padding-top: 18px;
+  }
+
+  .results-social{
+    padding-top: 16px;
+  }
+
+  /* .play-buttons{
+    padding-top: 24px;
+  } */
+}
+
+@media screen and (max-width: 375px){
 
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    height: 116vh;
+    height: 103.8vh;
     margin-top: -31px;
     background-size: cover;
     padding-top: 50px;
@@ -426,9 +446,23 @@ p {
  #message-category {
   height: 77px;
   }
+
+  .results-social{
+    padding-top: 18px;
+  }
 }
 
 @media screen and (max-width: 320px){
+
+  
+  .main-container {
+    /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
+    /* background-size: 94vh; */
+    height: 142vh;
+    margin-top: -31px;
+    background-size: cover;
+    padding-top: 50px;
+}
 
   #alphabet > .row > button {
     height: 2rem;
