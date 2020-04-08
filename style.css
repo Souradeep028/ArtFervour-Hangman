@@ -389,10 +389,9 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    height: 104.2vh;
+    min-height: 100vh;
     margin-top: -31px;
     background-size: cover;
-    padding-top: 18px;
   }
 
   .results-social{
@@ -409,10 +408,9 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    height: 103.8vh;
+    min-height: 100vh;
     margin-top: -31px;
     background-size: cover;
-    padding-top: 50px;
 }
 
   #alphabet > .row > button {
@@ -463,10 +461,9 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    height: 142vh;
+    min-height: 100vh;
     margin-top: -31px;
     background-size: cover;
-    padding-top: 50px;
 }
 
   #alphabet > .row > button {
