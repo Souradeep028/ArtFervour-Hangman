@@ -114,9 +114,9 @@ function addToHangman() {
 
   if (lastIncorrect) {
     $('.hide-letter').removeClass().addClass('show-letter');
-    $('.btn').removeClass().addClass('btn btn-primary disableClick');
+    $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 3500);
+      setTimeout(() => initialize(), 5500);
     }
     else gameOver();
   } 
@@ -142,7 +142,7 @@ function checkForWin() {
   if (playerWon) {
     ++scoreCounter;
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 2500);
+      setTimeout(() => initialize(), 4500);
     }
     else gameOver('win');
   } 
