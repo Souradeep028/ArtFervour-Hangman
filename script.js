@@ -37,7 +37,7 @@ function initialize() {
     hangman = newGame;
     updateCategory(hangman.question)
     appendSpaces();
-    $('#quesNum').text(`Question : ${quesIndex} `);
+    $('#quesNum').text(`Question : ${quesIndex}/${questionCounter} `);
     $('#scoreCount').text(`Score : ${scoreCounter}`);
   });
 }
