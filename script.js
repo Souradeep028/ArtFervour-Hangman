@@ -6,6 +6,9 @@ $('button').on('click', handleClick);
 
 var hangman = {};
 let hangmanObject={};
+let quesIndex=0;
+let scoreCounter=0;
+let questionCounter=0;
 
 function handleClick(e) {
   let id = e.target.id,
@@ -37,8 +40,12 @@ function initialize() {
   });
 }
 
-function getWord() {
-  return fetch("data.json").then(res => res.json()).then(data =>  data[Math.floor(Math.random()*data.length)]);
+async function getWord() {
+  questionCounter = fetch("data.json").then((res) => res.json()).then(data => questionCounter = data.length);
+
+  return fetch("data.json")
+    .then((res) => res.json())
+    .then((data) => data[quesIndex++]);
 }
 
 function resetGame() {
@@ -57,6 +64,7 @@ function resetGame() {
   $('.letter').removeClass().addClass('btn btn-primary');
   $('#hint').removeClass().addClass('btn btn-info');
   //request new word
+  console.log(questionCounter);
   return new Promise(resolve => resolve(getWord()))
 }
 
@@ -132,7 +140,7 @@ function checkForWin() {
 }
 
 function gameOver(win) {
-
+  console.log(quesIndex);
   hangman.newGame = false;
   $('#newGame').show().text('New Game');
   $('#moreGames').show().click(()=>window.location='https://www.artfervour.com/af-games');
@@ -143,8 +151,8 @@ function gameOver(win) {
   $('.hide-letter').removeClass().addClass('show-letter');
     
   let mssg = $('#category-label'),
-      won = '<span>You Won!</span>',
-      lost = '<span>You Lost!</span>';
+      won = `<span>You Won!<br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
+      lost = `<span>You Lost!<br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
     
   mssg.empty().removeClass('badge-secondary');
     
