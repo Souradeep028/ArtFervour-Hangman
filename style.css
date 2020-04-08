@@ -343,8 +343,7 @@ p {
     background-size: 140vh;
     margin: -30px auto;
     width: 481px;
-    height: 103vh;
-    padding-top: 60px;
+    height: 100vh;
   }
 
   #alphabet > .row > button {
