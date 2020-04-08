@@ -31,7 +31,6 @@ p {
 .logo {
   margin: 0 auto;
   display: block;
-  margin-top: 30px;
   margin-bottom: 24px;
   height: 48px;
 }
@@ -390,7 +389,6 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    margin-top: -31px;
     background-size: 140vh;
   }
 
@@ -410,7 +408,6 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    margin-top: -31px;
     background-size: cover;
 }
 
@@ -464,7 +461,6 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    margin-top: -31px;
     background-size: cover;
 }
 
