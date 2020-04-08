@@ -117,7 +117,7 @@ function addToHangman() {
     $('.hide-letter').removeClass().addClass('show-letter');
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 4000);
+      setTimeout(() => initialize(), 2600);
     }
     else gameOver();
   }
@@ -144,7 +144,7 @@ function checkForWin() {
     ++scoreCounter;
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 4000);
+      setTimeout(() => initialize(), 2600);
     }
     else gameOver('win');
   }
