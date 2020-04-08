@@ -40,7 +40,6 @@ function initialize() {
     $('#quesNum').text(`Question : ${quesIndex} `);
     $('#scoreCount').text(`Score : ${scoreCounter}`);
   });
-  console.log(quesIndex);
 }
 
 async function getWord() {
