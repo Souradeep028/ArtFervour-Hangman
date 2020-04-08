@@ -390,7 +390,7 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    background-size: 140vh;
+    background-size: 160vh;
   }
 
   .results-social{
@@ -409,7 +409,7 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    background-size: cover;
+    background-size: 160vh;
 }
 
   #alphabet > .row > button {
@@ -462,7 +462,7 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    background-size: cover;
+    background-size: 160vh;
 }
 
   #alphabet > .row > button {
