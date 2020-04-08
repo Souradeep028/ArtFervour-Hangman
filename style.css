@@ -340,9 +340,9 @@ p {
 
   .main-container{
     background-size: 140vh;
-    margin: -30px auto;
+    margin: 0px auto;
     width: 481px;
-    height: 100vh;
+    height: 140vh;
   }
 
   #alphabet > .row > button {
