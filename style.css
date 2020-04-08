@@ -338,7 +338,7 @@ p {
 @media screen and (min-width: 1024px){
 
   body{
-    background: url(./bodybg.jpg);
+    background: url(./bodybg01.jpg);
     background-size: cover;
     min-height: 100vh;
   }
