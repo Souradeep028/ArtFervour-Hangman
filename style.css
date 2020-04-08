@@ -391,11 +391,12 @@ p {
     /* background-size: 94vh; */
     min-height: 100vh;
     margin-top: -31px;
-    background-size: cover;
+    background-size: 140vh;
   }
 
   .results-social{
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   /* .play-buttons{
@@ -452,6 +453,7 @@ p {
 
   .results-social{
     padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 
