@@ -162,8 +162,8 @@ function checkForWin() {
     // $('.hide-letter').removeClass().addClass('show-letter');
 
     let mssg = $('#category-label'),
-      won = `<span>You Won!<br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
-      lost = `<span>You Lost!<br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
+      won = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`,
+      lost = `<span><br><br>Score : ${scoreCounter}/${questionCounter}</span>`;
 
     mssg.empty().removeClass('badge-secondary');
 
