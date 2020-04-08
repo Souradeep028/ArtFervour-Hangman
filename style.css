@@ -13,6 +13,7 @@ body {
 
 .main-container{
   background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
+  min-height: 100vh;
 }
 
 p {
@@ -335,13 +336,14 @@ p {
   body{
     background: url(./bodybg.jpg);
     background-size: cover;
+    min-height: 100vh;
   }
 
   .main-container{
-    background-size: 140vh;
+    background-size: 160vh;
     margin: 0px auto;
     width: 481px;
-    height: 140vh;
+    min-height: 100vh;
   }
 
   #alphabet > .row > button {
