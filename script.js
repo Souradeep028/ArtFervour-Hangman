@@ -120,7 +120,7 @@ function addToHangman() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else gameOver();
+    else setTimeout(() =>gameOver(), 2400);
   }
   else {
     hangman.stickIndex += 1;
@@ -147,7 +147,7 @@ function checkForWin() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else gameOver('win');
+    else setTimeout(() =>gameOver('win'), 2400);
   }
 }
 function gameOver(win) {
