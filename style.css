@@ -13,6 +13,7 @@ body {
 
 .main-container{
   background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
+  min-height: 100vh;
 }
 
 p {
