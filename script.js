@@ -37,6 +37,8 @@ function initialize() {
     hangman = newGame;
     updateCategory(hangman.question)
     appendSpaces();
+    $('#quesNum').text(`Question : ${quesIndex} `);
+    $('#scoreCount').text(`Score : ${scoreCounter}`);
   });
   console.log(quesIndex);
 }
@@ -116,7 +118,7 @@ function addToHangman() {
     $('.hide-letter').removeClass().addClass('show-letter');
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 5500);
+      setTimeout(() => initialize(), 6000);
     }
     else gameOver();
   } 
@@ -142,13 +144,14 @@ function checkForWin() {
   if (playerWon) {
     ++scoreCounter;
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 4500);
+      setTimeout(() => initialize(), 6000);
     }
     else gameOver('win');
   } 
 }
   function gameOver(win) {
     hangman.newGame = false;
+    $('.btn').removeClass().addClass('btn btn-primary');
     $('#newGame').show().text('New Game');
     $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
     $('.results-social').show();
