@@ -271,6 +271,7 @@ p {
   display: flex;
   justify-content: center;
   margin: 2rem 1rem;
+  margin-left: 28px;
 }
 
 .hint-parent{
