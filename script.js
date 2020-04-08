@@ -51,6 +51,7 @@ async function getWord() {
 
 function resetGame() {
   //reset text, stick figure, button styles
+  $('#word-letters').show();
   $('#newGame').hide();
   $('#moreGames').hide();
   $('.results-social').hide();
@@ -117,7 +118,7 @@ function addToHangman() {
     $('.hide-letter').removeClass().addClass('show-letter');
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 2600);
+      setTimeout(() => initialize(), 2400);
     }
     else gameOver();
   }
@@ -144,14 +145,15 @@ function checkForWin() {
     ++scoreCounter;
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 2600);
+      setTimeout(() => initialize(), 2400);
     }
     else gameOver('win');
   }
 }
 function gameOver(win) {
   hangman.newGame = false;
-  $('.btn').removeClass().addClass('btn btn-primary').re;
+  $('.btn').removeClass().addClass('btn btn-primary');
+  $('#word-letters').hide();
   $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; initialize() });
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
   $('.results-social').show();
