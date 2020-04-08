@@ -333,6 +333,11 @@ p {
 
 @media screen and (min-width: 1024px){
 
+  body{
+    background: url(./bodybg.jpg);
+    background-size: cover;
+  }
+
   .main-container{
     background-size: 140vh;
     margin: -30px auto;
