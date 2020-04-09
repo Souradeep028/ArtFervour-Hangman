@@ -1,6 +1,7 @@
 $('#alphabet').hide();
 $('.results-social').hide();
 $('#moreGames').hide();
+$('#correctAns').hide();
 
 $('button').on('click', handleClick);
 
@@ -33,6 +34,9 @@ function shakeButton(id) {
 }
 
 function initialize() {
+  $('#correctAns').hide();
+  $('#hangman-figure').show();
+  $('#stick-figure').show();
   resetGame().then(newGame => {
     hangman = newGame;
     updateCategory(hangman.question)
@@ -144,9 +148,12 @@ function checkForWin() {
   if (playerWon) {
     ++scoreCounter;
     $('#scoreCount').text(`Score : ${scoreCounter}`);
+    $('#correctAns').show();
+    $('#hangman-figure').hide();
+    $('#stick-figure').hide();
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 2400);
+      setTimeout(() => initialize(), 124000);
     }
     else setTimeout(() =>gameOver('win'), 2400);
   }
