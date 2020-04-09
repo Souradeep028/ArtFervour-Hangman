@@ -153,7 +153,7 @@ function checkForWin() {
     $('#stick-figure').hide();
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
     if (quesIndex < questionCounter) {
-      setTimeout(() => initialize(), 124000);
+      setTimeout(() => initialize(), 2400);
     }
     else setTimeout(() =>gameOver('win'), 2400);
   }
