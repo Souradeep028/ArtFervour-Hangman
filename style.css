@@ -12,7 +12,7 @@ body {
 }
 
 .main-container{
-  background: url(./bg01.jpg);
+  background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg);
   min-height: 100vh;
   background-size: 140vh;
 }
@@ -45,6 +45,11 @@ p {
 
 #alphabet {
   text-align: center;
+  background: #fff;
+  padding-top: 12px;
+  width: 95%;
+  border-radius: 14px;
+  margin: 0 auto;
 }
 
 #alphabet > .row > button {
