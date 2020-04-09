@@ -35,7 +35,12 @@ p {
   margin-bottom: 36px;
   height: 72px;
   padding-top: 20px;
+}
 
+#correctAns{
+  margin: 0 auto;
+  display: block;
+  height: 158px;
 }
 
 #alphabet {
