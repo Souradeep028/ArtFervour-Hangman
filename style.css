@@ -17,7 +17,7 @@ body {
   border: 2px solid #000;
   border-radius: 24px;
   /* background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg); */
-  min-height: 100vh;
+  min-height: 97vh;
   background-size: 140vh;
 }
 
@@ -371,18 +371,13 @@ p {
 }
 
 @media screen and (min-width: 1080px) {
-  body {
-    background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
-    background-size: cover;
-    min-height: 100vh;
-  }
 
   .main-container {
-    background: none;
-    background-size: 164vh;
-    margin: 0px auto;
+    /* background: none;
+    background-size: 164vh; */
+    /* margin: 10pxpx auto; */
     width: 481px;
-    min-height: 100vh;
+    min-height: 97vh;
   }
 
   #alphabet > .row > button {
@@ -434,7 +429,7 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    min-height: 100vh;
+    min-height: 97vh;
     background-size: 140vh;
   }
 
@@ -478,7 +473,7 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    min-height: 100vh;
+    min-height: 97vh;
     background-size: 160vh;
   }
 
@@ -531,7 +526,7 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    min-height: 100vh;
+    min-height: 97vh;
     background-size: 160vh;
   }
 
