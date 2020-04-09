@@ -12,7 +12,7 @@ body {
 }
 
 .main-container{
-  background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad40498aa24ca1467590710c507.jpg);
+  background: url(./bg01.jpg);
   min-height: 100vh;
   background-size: 140vh;
 }
@@ -419,7 +419,7 @@ p {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
     min-height: 100vh;
-    background-size: 160vh;
+    background-size: 140vh;
   }
 
   .results-social{
