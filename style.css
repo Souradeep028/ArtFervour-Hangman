@@ -459,6 +459,20 @@ p {
   }
 }
 
+@media screen and (max-width: 403px) {
+  #alphabet > .row > button {
+    height: 3rem;
+    margin: 0.095rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #alphabet > .row > button {
+    height: 3rem;
+    margin: 0.082rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
@@ -476,6 +490,8 @@ p {
     width: 2.4rem;
   }
   #alphabet > .row > .btn-primary {
+    height: 2.4rem;
+    margin: 0.18rem;
     width: 2.4rem;
   }
 
