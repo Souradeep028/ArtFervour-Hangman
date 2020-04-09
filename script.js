@@ -37,7 +37,7 @@ function initialize() {
     hangman = newGame;
     updateCategory(hangman.question)
     appendSpaces();
-    $('#quesNum').text(`Question : ${quesIndex}/${questionCounter} `);
+    $('#quesNum').text(`Question : ${quesIndex}/9 `);
     $('#scoreCount').text(`Score : ${scoreCounter}`);
   });
 }
@@ -46,11 +46,12 @@ async function getWord() {
   questionCounter = fetch("data.json").then((res) => res.json()).then(data => questionCounter = data.length);
   return fetch("data.json")
     .then((res) => res.json())
-    .then((data) => data[quesIndex++]);
+    .then((data) => data[Math.floor(Math.random()*data.length)]);
 }
 
 function resetGame() {
   //reset text, stick figure, button styles
+  quesIndex++
   $('#word-letters').show();
   $('#newGame').hide();
   $('#moreGames').hide();
