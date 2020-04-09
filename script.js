@@ -161,6 +161,9 @@ function checkForWin() {
 function gameOver(win) {
   hangman.newGame = false;
   $('.btn').removeClass().addClass('btn btn-primary');
+  $('#correctAns').hide();
+  $('#hangman-figure').show();
+  $('#stick-figure').show();
   $('#word-letters').hide();
   $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; initialize() });
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
