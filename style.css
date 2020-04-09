@@ -18,7 +18,8 @@ body {
   border-radius: 24px;
   /* background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg); */
   min-height: 90vh;
-  background-size: 140vh;
+  /* background-size: 140vh; */
+  align-items: center;
 }
 
 p {
@@ -377,7 +378,7 @@ p {
     background-size: 164vh; */
     /* margin: 10pxpx auto; */
     width: 481px;
-    min-height: 90vh;
+    min-height: 97.6vh;
   }
 
   #alphabet > .row > button {
