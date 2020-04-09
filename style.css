@@ -422,6 +422,13 @@ p {
   }
 }
 
+@media screen and(max-width: 417px) {
+  #alphabet > .row > button {
+    height: 3rem;
+    margin: 0.16rem;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
@@ -550,7 +557,7 @@ p {
   }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) {
   #alphabet > .row > button {
     height: 2.4rem;
     margin: 0.2rem;
