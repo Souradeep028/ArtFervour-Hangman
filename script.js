@@ -155,15 +155,14 @@ function checkForWin() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else setTimeout(() =>gameOver('win'), 2400);
+    else setTimeout(() =>gameOver(), 2400);
   }
 }
-function gameOver(win) {
+function gameOver() {
   hangman.newGame = false;
   $('.btn').removeClass().addClass('btn btn-primary');
-  $('#correctAns').hide();
-  $('#hangman-figure').show();
-  $('#stick-figure').show();
+  $('#hangman-figure').hide();
+  $('#stick-figure').hide();
   $('#word-letters').hide();
   $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; initialize() });
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
@@ -179,9 +178,11 @@ function gameOver(win) {
 
   mssg.empty().removeClass('badge-secondary');
 
-  if (win) {
+  if (scoreCounter>1) {
+    $('#correctAns').attr('src', './dali_win.jpeg');
     mssg.append(won);
   } else {
+    $('#correctAns').attr('src', './dali_lose.jpeg');
     mssg.append(lost);
   }
 }
