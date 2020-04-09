@@ -12,7 +12,12 @@ body {
 }
 
 .main-container{
-  background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg);
+  background: #fff;
+  width: 95%;
+  margin: 10px auto;
+  border: 2px solid #000;
+  border-radius: 24px;
+  /* background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg); */
   min-height: 100vh;
   background-size: 140vh;
 }
@@ -45,7 +50,7 @@ p {
 
 #alphabet {
   text-align: center;
-  background: #fff;
+  /* background: #fff; */
   padding-top: 12px;
   width: 95%;
   border-radius: 14px;
@@ -54,7 +59,7 @@ p {
 
 #alphabet > .row > button {
   height: 3rem;
-  margin: 0.25rem;
+  margin: 0.2rem;
 }
 
 #alphabet > .row > .btn-info {
@@ -159,10 +164,11 @@ p {
 .guessed-right {
   border-bottom: 2px solid #000;
   font-size: 1rem;
-  margin: 0 0.25rem;
-  width: 2.5rem;
+  margin: 0 auto;
+  width: 0.8rem;
   font-weight: 500;
   text-align: center;
+  justify-content: center;
 }
 
 #hangman-figure {
