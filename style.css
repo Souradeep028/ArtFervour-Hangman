@@ -17,7 +17,7 @@ body {
   border: 2px solid #000;
   border-radius: 24px;
   /* background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg); */
-  min-height: 97vh;
+  min-height: 90vh;
   background-size: 140vh;
 }
 
@@ -377,7 +377,7 @@ p {
     background-size: 164vh; */
     /* margin: 10pxpx auto; */
     width: 481px;
-    min-height: 97vh;
+    min-height: 90vh;
   }
 
   #alphabet > .row > button {
@@ -429,8 +429,8 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    min-height: 97vh;
-    background-size: 140vh;
+    min-height: 90vh;
+    /* background-size: 140vh; */
   }
 
   #alphabet > .row > button {
@@ -473,8 +473,8 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    min-height: 97vh;
-    background-size: 160vh;
+    min-height: 90vh;
+    /* background-size: 160vh; */
   }
 
   #alphabet > .row > button {
@@ -526,8 +526,8 @@ p {
   .main-container {
     /* background: url(https://i.pinimg.com/originals/ef/8b/2a/ef8b2ad….jpg); */
     /* background-size: 94vh; */
-    min-height: 97vh;
-    background-size: 160vh;
+    min-height: 90vh;
+    /* background-size: 160vh; */
   }
 
   #alphabet > .row > button {
