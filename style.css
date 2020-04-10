@@ -16,9 +16,9 @@ body {
   margin: 10px auto;
   border: 2px solid #000;
   border-radius: 24px;
-  /* background: url(https://image.freepik.com/free-photo/brick-wall-painted-white_1194-7526.jpg); */
+  background: url(./bg.jpg);
   min-height: 90vh;
-  /* background-size: 140vh; */
+  background-size: 140vh;
   align-items: center;
 }
 
