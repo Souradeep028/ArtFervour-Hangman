@@ -173,9 +173,9 @@ function gameOver() {
   // $('.hide-letter').removeClass().addClass('show-letter');
 
   let mssg = $('#category-label'),
-    sc03 = `<span>Aaah you're killing me, try harder!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
-    sc46 = `<span>Hmm you're getting there. Valiant effort!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
-    sc79 = `<span>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
+    sc03 = `<span><br>Aaah you're killing me, try harder!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    sc46 = `<span><br>Hmm you're getting there. Valiant effort!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    sc79 = `<span><br>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
 
   mssg.empty().removeClass('badge-secondary');
 
