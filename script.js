@@ -151,7 +151,7 @@ function addToHangman() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else setTimeout(() => {gameOver(); $('#correctAns').attr('src', './dali_0_3.jpg');}, 2400);
+    else setTimeout(() => {gameOver();}, 2400);
   }
   else {
     hangman.stickIndex += 1;
@@ -187,6 +187,7 @@ function checkForWin() {
 }
 function gameOver() {
   hangman.newGame = false;
+  $('#correctAns').attr('src', '');
   $('.btn').removeClass().addClass('btn btn-primary');
   $('#hangman-figure').hide();
   $('#stick-figure').hide();
