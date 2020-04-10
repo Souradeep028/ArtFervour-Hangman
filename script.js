@@ -184,7 +184,7 @@ function gameOver() {
   $('#stick-figure').hide();
   $('#word-letters').hide();
   $('#newGame').show().text('Play Again').unbind().click(() => { quesIndex = 0; scoreCounter = 0; skipCounter = 0; initialize() });
-  $('#gotoquiz').show();
+  $('#gotoquiz').show().click(() => window.location = 'https://guesstheartist.netlify.com/');
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
   $('.results-social').show();
   $('#alphabet').hide();
