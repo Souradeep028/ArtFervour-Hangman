@@ -1,6 +1,7 @@
 $('#alphabet').hide();
 $('.results-social').hide();
 $('#moreGames').hide();
+$('#gotoquiz').hide();
 $('#correctAns').hide();
 
 $('.btn').on('click', handleClick);
@@ -74,6 +75,7 @@ function resetGame() {
   //reset text, stick figure, button styles
   $('#word-letters').show();
   $('#newGame').hide();
+  $('#gotoquiz').hide();
   $('#moreGames').hide();
   $('.results-social').hide();
   $('#alphabet').show();
@@ -182,6 +184,7 @@ function gameOver() {
   $('#stick-figure').hide();
   $('#word-letters').hide();
   $('#newGame').show().text('Play Again').unbind().click(() => { quesIndex = 0; scoreCounter = 0; skipCounter = 0; initialize() });
+  $('#gotoquiz').show();
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
   $('.results-social').show();
   $('#alphabet').hide();
