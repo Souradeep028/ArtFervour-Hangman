@@ -3,13 +3,14 @@ $('.results-social').hide();
 $('#moreGames').hide();
 $('#correctAns').hide();
 
-$('button').on('click', handleClick);
+$('.btn').on('click', handleClick);
 
 var hangman = {};
 let hangmanObject = {};
 let quesIndex = 0;
 let scoreCounter = 0;
 let questionCounter = 0;
+let skipCounter = 0;
 
 function handleClick(e) {
   let id = e.target.id,
@@ -37,6 +38,19 @@ function initialize() {
   $('#correctAns').hide().attr('src', './correct.jpg');
   $('#hangman-figure').show();
   $('#stick-figure').show();
+
+  $('#skip').on('click', () => {
+    ++skipCounter;
+    console.log(skipCounter);
+    resetGame().then(newGame => {
+      hangman = newGame;
+      updateCategory(hangman.question)
+      appendSpaces();
+      $('#quesNum').text(`${quesIndex}/9 `);
+      $('#scoreCount').text(`Score : ${scoreCounter}`);
+    });
+  });
+
   resetGame().then(newGame => {
     hangman = newGame;
     updateCategory(hangman.question)
@@ -70,6 +84,9 @@ function resetGame() {
   $('.btn').removeClass().addClass('btn btn-primary');
   $('.letter').removeClass().addClass('btn btn-primary');
   $('#hint').removeClass().addClass('btn btn-info');
+  if (skipCounter==8) {
+    $('#skip').hide();
+  }
   //request new word
   return new Promise(resolve => resolve(getWord()))
 }
@@ -124,7 +141,7 @@ function addToHangman() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else setTimeout(() =>gameOver(), 2400);
+    else setTimeout(() => gameOver(), 2400);
   }
   else {
     hangman.stickIndex += 1;
@@ -155,7 +172,7 @@ function checkForWin() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else setTimeout(() =>gameOver(), 2400);
+    else setTimeout(() => gameOver(), 2400);
   }
 }
 function gameOver() {
@@ -179,11 +196,11 @@ function gameOver() {
 
   mssg.empty().removeClass('badge-secondary');
 
-  if (scoreCounter>=0 && scoreCounter<=3) {
+  if (scoreCounter >= 0 && scoreCounter <= 3) {
     $('#correctAns').show().attr('src', './dali_0_3.jpg');
     mssg.append(sc03);
-  } 
-  else if (scoreCounter>=4 && scoreCounter<=6){
+  }
+  else if (scoreCounter >= 4 && scoreCounter <= 6) {
     $('#correctAns').show().attr('src', './dali_4_6.jpg');
     mssg.append(sc46);
   }
