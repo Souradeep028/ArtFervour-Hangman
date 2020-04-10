@@ -54,14 +54,14 @@ $('#skip').click(() => {
   console.log("QuesIndex : " + quesIndex);
   if (quesIndex == 8) {
     ++skipCounter
-    setTimeout(()=>initialize(), 800);
+    setTimeout(()=>initialize(), 100).delay(700).fadeIn();
     $('#toggle-skip').hide();
     $('#toggle-skip1').show();
   }
   else {
     ++skipCounter;
     console.log("SkipCounter : " + skipCounter);
-    setTimeout(()=>initialize(), 800);
+    setTimeout(()=>initialize(), 100).delay(700).fadeIn();
   }
 });
 
