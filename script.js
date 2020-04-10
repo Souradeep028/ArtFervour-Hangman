@@ -34,7 +34,7 @@ function shakeButton(id) {
 }
 
 function initialize() {
-  $('#correctAns').hide();
+  $('#correctAns').hide().attr('src', './correct.jpg');
   $('#hangman-figure').show();
   $('#stick-figure').show();
   resetGame().then(newGame => {
@@ -173,9 +173,9 @@ function gameOver() {
   // $('.hide-letter').removeClass().addClass('show-letter');
 
   let mssg = $('#category-label'),
-    sc03 = `<span><br>Aaah you're killing me, try harder!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
-    sc46 = `<span><br>Hmm you're getting there. Valiant effort!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
-    sc79 = `<span><br>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
+    sc03 = `<span><br><br>Aaah you're killing me, try harder!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    sc46 = `<span><br><br>Hmm you're getting there. Valiant effort!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    sc79 = `<span><br><br>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
 
   mssg.empty().removeClass('badge-secondary');
 
