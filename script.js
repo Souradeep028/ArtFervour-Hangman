@@ -3,6 +3,7 @@ $('.results-social').hide();
 $('#moreGames').hide();
 $('#gotoquiz').hide();
 $('#correctAns').hide();
+$('#toggle-skip1').hide();
 
 $('.btn').on('click', handleClick);
 
@@ -50,13 +51,25 @@ function initialize() {
 }
 
 $('#skip').click(() => {
-  ++skipCounter;
-  console.log("QuesIndex : "+quesIndex)
-  console.log("SkipCounter : "+skipCounter)
-  if (quesIndex > 7) {
+  console.log("QuesIndex : " + quesIndex);
+  if (quesIndex == 8) {
+    ++skipCounter
+    initialize();
     $('#toggle-skip').hide();
+    $('#toggle-skip1').show();
   }
-  else initialize();
+  else {
+    ++skipCounter;
+    console.log("SkipCounter : " + skipCounter);
+    initialize();
+  }
+});
+
+$('#skip1').click(() => {
+  ++skipCounter
+  console.log("QuesIndex : " + quesIndex);
+  console.log("SkipCounter : " + skipCounter);
+  gameOver();
 });
 
 async function getWord() {
