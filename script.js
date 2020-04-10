@@ -69,7 +69,7 @@ $('#skip1').click(() => {
   ++skipCounter
   console.log("QuesIndex : " + quesIndex);
   console.log("SkipCounter : " + skipCounter);
-  gameOver();
+  setTimeout(()=>gameOver(), 500);
 });
 
 async function getWord() {
