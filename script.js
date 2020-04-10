@@ -151,7 +151,7 @@ function addToHangman() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else {$('#correctAns').attr('src', './dali_0_3.jpg'); setTimeout(() => {gameOver();}, 2400);}
+    else setTimeout(() => {gameOver(); $('#correctAns').attr('src', './dali_0_3.jpg');}, 2400);
   }
   else {
     hangman.stickIndex += 1;
@@ -182,7 +182,7 @@ function checkForWin() {
     if (quesIndex < questionCounter) {
       setTimeout(() => initialize(), 2400);
     }
-    else {$('#correctAns').attr('src', './dali_0_3.jpg'); setTimeout(() => {gameOver();}, 2400);}
+    else setTimeout(() => {gameOver(); $('#correctAns').attr('src', './dali_0_3.jpg');}, 2400);
   }
 }
 function gameOver() {
