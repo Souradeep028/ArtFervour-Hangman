@@ -183,7 +183,7 @@ function gameOver() {
   $('#hangman-figure').hide();
   $('#stick-figure').hide();
   $('#word-letters').hide();
-  $('#newGame').show().text('Play Again').unbind().click(() => () => window.location = 'https://guesstheartist.netlify.com/');
+  $('#newGame').show().text('Play Again').unbind().click(() => () => window.location.reload());
   $('#gotoquiz').show().click(() => window.location = 'https://guesstheartist.netlify.com/');
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
   $('.results-social').show();
