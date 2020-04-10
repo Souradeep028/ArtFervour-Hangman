@@ -38,7 +38,6 @@ function initialize() {
   $('#correctAns').hide().attr('src', './correct.jpg');
   $('#hangman-figure').show();
   $('#stick-figure').show();
-  $('#toggle-skip').show();
 
   $('#skip').click(() => {
     ++skipCounter;
@@ -182,7 +181,7 @@ function gameOver() {
   $('#hangman-figure').hide();
   $('#stick-figure').hide();
   $('#word-letters').hide();
-  $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; skipCounter = 0; initialize() });
+  $('#newGame').show().text('Play Again').unbind().click(() => { quesIndex = 0; scoreCounter = 0; skipCounter = 0; initialize() });
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
   $('.results-social').show();
   $('#alphabet').hide();
