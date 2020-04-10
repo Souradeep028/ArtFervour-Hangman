@@ -5,7 +5,7 @@
 } */
 body {
   min-height: 90vh;
-  background-color: #fcb646;
+  background-color: #E9E237;
   font-size: 1rem;
   box-sizing: border-box !important;
 }
@@ -29,8 +29,8 @@ p {
 }
 
 #hangman-head {
-  fill: #E9E237;
-  stroke: #E9E237;
+  fill: #fcb646;
+  stroke: #fcb646;
   stroke-width: 3;
 }
 
