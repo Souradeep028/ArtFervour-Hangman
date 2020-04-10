@@ -38,14 +38,14 @@ function shakeButton(id) {
 
 function initialize() {
   $('#correctAns').hide().attr('src', './correct.jpg');
-  $('#hangman-figure').show();
-  $('#stick-figure').show();
+  $('#hangman-figure').show(800);
+  $('#stick-figure').show(800);
 
   resetGame().then(newGame => {
     hangman = newGame;
     updateCategory(hangman.question)
     appendSpaces();
-    $('#quesNum').text(`${quesIndex}/9 `);
+    $('#quesNum').text(`${quesIndex}/9 `).delay(100);
     $('#scoreCount').text(`Score : ${scoreCounter}`);
   });
 }
@@ -54,14 +54,14 @@ $('#skip').click(() => {
   console.log("QuesIndex : " + quesIndex);
   if (quesIndex == 8) {
     ++skipCounter
-    setTimeout(()=>initialize(), 100).delay(700).fadeIn();
+    setTimeout(()=>initialize(), 700);
     $('#toggle-skip').hide();
     $('#toggle-skip1').show();
   }
   else {
     ++skipCounter;
     console.log("SkipCounter : " + skipCounter);
-    setTimeout(()=>initialize(), 100).delay(700).fadeIn();
+    setTimeout(()=>initialize(), 700);
   }
 });
 
@@ -81,14 +81,14 @@ async function getWord() {
 
 function resetGame() {
   //reset text, stick figure, button styles
-  $('#word-letters').show();
-  $('#newGame').hide();
-  $('#gotoquiz').hide();
-  $('#moreGames').hide();
-  $('.results-social').hide();
-  $('#alphabet').show();
-  $('#question-text').show();
-  $('#hintParent').show();
+  $('#word-letters').show(800);
+  $('#newGame').hide(400);
+  $('#gotoquiz').hide(400);
+  $('#moreGames').hide(400);
+  $('.results-social').hide(400);
+  $('#alphabet').show(800);
+  $('#question-text').show(800);
+  $('#hintParent').show(800);
   $('.guessed-right').text('');
   $('#word-letters').empty();
   $('svg > circle, line').removeClass().addClass('hide-hangman');
