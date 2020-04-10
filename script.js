@@ -175,7 +175,7 @@ function checkForWin() {
   if (playerWon) {
     ++scoreCounter;
     $('#scoreCount').text(`Score : ${scoreCounter}`);
-    $('#correctAns').show();
+    $('#correctAns').show().attr('src', './correct.jpg');
     $('#hangman-figure').hide();
     $('#stick-figure').hide();
     $('.btn').removeClass().addClass('btn btn-secondary disableClick');
