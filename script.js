@@ -179,10 +179,10 @@ function gameOver() {
   mssg.empty().removeClass('badge-secondary');
 
   if (scoreCounter>1) {
-    $('#correctAns').attr('src', './dali_win.jpeg');
+    $('#correctAns').show().attr('src', './dali_win.jpeg');
     mssg.append(won);
   } else {
-    $('#correctAns').attr('src', './dali_lose.jpeg');
+    $('#correctAns').show().attr('src', './dali_lose.jpeg');
     mssg.append(lost);
   }
 }
