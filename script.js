@@ -53,7 +53,7 @@ $('#skip').click(() => {
   ++skipCounter;
   console.log("QuesIndex : "+quesIndex)
   console.log("SkipCounter : "+skipCounter)
-  if (skipCounter > 7) {
+  if (quesIndex > 7) {
     $('#toggle-skip').hide();
   }
   else initialize();
