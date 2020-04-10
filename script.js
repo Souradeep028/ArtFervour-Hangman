@@ -38,21 +38,22 @@ function initialize() {
   $('#correctAns').hide().attr('src', './correct.jpg');
   $('#hangman-figure').show();
   $('#stick-figure').show();
+  $('#toggle-skip').show();
 
-    $('#skip').click(() => {
-      ++skipCounter;
-      if(skipCounter > 7) {
-        $('#toggle-skip').hide();
-      }
-      console.log(skipCounter);
-      resetGame().then(newGame => {
-        hangman = newGame;
-        updateCategory(hangman.question)
-        appendSpaces();
-        $('#quesNum').text(`${quesIndex}/9 `);
-        $('#scoreCount').text(`Score : ${scoreCounter}`);
-      });
+  $('#skip').click(() => {
+    ++skipCounter;
+    if (skipCounter > 7) {
+      $('#toggle-skip').hide();
+    }
+    console.log(skipCounter);
+    resetGame().then(newGame => {
+      hangman = newGame;
+      updateCategory(hangman.question)
+      appendSpaces();
+      $('#quesNum').text(`${quesIndex}/9 `);
+      $('#scoreCount').text(`Score : ${scoreCounter}`);
     });
+  });
 
   resetGame().then(newGame => {
     hangman = newGame;
@@ -192,20 +193,24 @@ function gameOver() {
   let mssg = $('#category-label'),
     sc03 = `<span><br><br>Aaah you're killing me, try harder!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
     sc46 = `<span><br><br>Hmm you're getting there. Valiant effort!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
-    sc79 = `<span><br><br>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
+    sc79 = `<span><br><br>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    skip = `<span><br><br>Skipped Quenstions : ${skipCounter}</span>`;
 
   mssg.empty().removeClass('badge-secondary');
 
   if (scoreCounter >= 0 && scoreCounter <= 3) {
     $('#correctAns').show().attr('src', './dali_0_3.jpg');
     mssg.append(sc03);
+    mssg.append(skip);
   }
   else if (scoreCounter >= 4 && scoreCounter <= 6) {
     $('#correctAns').show().attr('src', './dali_4_6.jpg');
     mssg.append(sc46);
+    mssg.append(skip);
   }
   else {
     $('#correctAns').show().attr('src', './dali_7_9.jpg');
     mssg.append(sc79);
+    mssg.append(skip);
   }
 }
