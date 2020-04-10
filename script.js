@@ -173,16 +173,22 @@ function gameOver() {
   // $('.hide-letter').removeClass().addClass('show-letter');
 
   let mssg = $('#category-label'),
-    won = `<span><br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
-    lost = `<span><br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
+    sc03 = `<span>Aaah you're killing me, try harder!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    sc46 = `<span>Hmm you're getting there. Valiant effort!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`,
+    sc79 = `<span>My God! You're a genius!<br><br>Your Score : ${scoreCounter}/${questionCounter}</span>`;
 
   mssg.empty().removeClass('badge-secondary');
 
-  if (scoreCounter>1) {
-    $('#correctAns').show().attr('src', './dali_win.jpeg');
-    mssg.append(won);
-  } else {
-    $('#correctAns').show().attr('src', './dali_lose.jpeg');
-    mssg.append(lost);
+  if (scoreCounter>=0 && scoreCounter<=3) {
+    $('#correctAns').show().attr('src', './dali_0_3.jpg');
+    mssg.append(sc03);
+  } 
+  else if (scoreCounter>=4 && scoreCounter<=6){
+    $('#correctAns').show().attr('src', './dali_4_6.jpg');
+    mssg.append(sc46);
+  }
+  else {
+    $('#correctAns').show().attr('src', './dali_7_9.jpg');
+    mssg.append(sc79);
   }
 }
