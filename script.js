@@ -39,17 +39,20 @@ function initialize() {
   $('#hangman-figure').show();
   $('#stick-figure').show();
 
-  $('#skip').on('click', () => {
-    ++skipCounter;
-    console.log(skipCounter);
-    resetGame().then(newGame => {
-      hangman = newGame;
-      updateCategory(hangman.question)
-      appendSpaces();
-      $('#quesNum').text(`${quesIndex}/9 `);
-      $('#scoreCount').text(`Score : ${scoreCounter}`);
+    $('#skip').click(() => {
+      ++skipCounter;
+      if(skipCounter > 7) {
+        $('#toggle-skip').hide();
+      }
+      console.log(skipCounter);
+      resetGame().then(newGame => {
+        hangman = newGame;
+        updateCategory(hangman.question)
+        appendSpaces();
+        $('#quesNum').text(`${quesIndex}/9 `);
+        $('#scoreCount').text(`Score : ${scoreCounter}`);
+      });
     });
-  });
 
   resetGame().then(newGame => {
     hangman = newGame;
@@ -84,9 +87,6 @@ function resetGame() {
   $('.btn').removeClass().addClass('btn btn-primary');
   $('.letter').removeClass().addClass('btn btn-primary');
   $('#hint').removeClass().addClass('btn btn-info');
-  if (skipCounter==8) {
-    $('#skip').hide();
-  }
   //request new word
   return new Promise(resolve => resolve(getWord()))
 }
@@ -181,7 +181,7 @@ function gameOver() {
   $('#hangman-figure').hide();
   $('#stick-figure').hide();
   $('#word-letters').hide();
-  $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; initialize() });
+  $('#newGame').show().text('New Game').unbind().click(() => { quesIndex = 0; scoreCounter = 0; skipCounter = 0; initialize() });
   $('#moreGames').show().click(() => window.location = 'https://www.artfervour.com/af-games');
   $('.results-social').show();
   $('#alphabet').hide();
