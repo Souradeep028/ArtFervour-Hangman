@@ -40,21 +40,6 @@ function initialize() {
   $('#hangman-figure').show();
   $('#stick-figure').show();
 
-  $('#skip').click(() => {
-    ++skipCounter;
-    if (skipCounter > 7) {
-      $('#toggle-skip').hide();
-    }
-    console.log(skipCounter);
-    resetGame().then(newGame => {
-      hangman = newGame;
-      updateCategory(hangman.question)
-      appendSpaces();
-      $('#quesNum').text(`${quesIndex}/9 `);
-      $('#scoreCount').text(`Score : ${scoreCounter}`);
-    });
-  });
-
   resetGame().then(newGame => {
     hangman = newGame;
     updateCategory(hangman.question)
@@ -63,6 +48,16 @@ function initialize() {
     $('#scoreCount').text(`Score : ${scoreCounter}`);
   });
 }
+
+$('#skip').click(() => {
+  ++skipCounter;
+  console.log("QuesIndex : "+quesIndex)
+  console.log("SkipCounter : "+skipCounter)
+  if (skipCounter > 7) {
+    $('#toggle-skip').hide();
+  }
+  else initialize();
+});
 
 async function getWord() {
   questionCounter = fetch("data.json").then((res) => res.json()).then(data => questionCounter = data.length);
