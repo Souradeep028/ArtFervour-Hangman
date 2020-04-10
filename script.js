@@ -54,14 +54,14 @@ $('#skip').click(() => {
   console.log("QuesIndex : " + quesIndex);
   if (quesIndex == 8) {
     ++skipCounter
-    setTimeout(()=>initialize(), 500);
+    setTimeout(()=>initialize(), 800);
     $('#toggle-skip').hide();
     $('#toggle-skip1').show();
   }
   else {
     ++skipCounter;
     console.log("SkipCounter : " + skipCounter);
-    setTimeout(()=>initialize(), 500);
+    setTimeout(()=>initialize(), 800);
   }
 });
 
@@ -69,7 +69,7 @@ $('#skip1').click(() => {
   ++skipCounter
   console.log("QuesIndex : " + quesIndex);
   console.log("SkipCounter : " + skipCounter);
-  setTimeout(()=>gameOver(), 500);
+  setTimeout(()=>gameOver(), 800);
 });
 
 async function getWord() {
