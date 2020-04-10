@@ -210,17 +210,17 @@ function gameOver() {
   mssg.empty().removeClass('badge-secondary');
 
   if (scoreCounter >= 0 && scoreCounter <= 3) {
-    $('#correctAns').show().attr('src', './dali_0_3.jpg');
+    $('#correctAns').attr('src', './dali_0_3.jpg').show();
     mssg.append(sc03);
     mssg.append(skip);
   }
   else if (scoreCounter >= 4 && scoreCounter <= 6) {
-    $('#correctAns').show().attr('src', './dali_4_6.jpg');
+    $('#correctAns').attr('src', './dali_4_6.jpg').show();
     mssg.append(sc46);
     mssg.append(skip);
   }
   else {
-    $('#correctAns').show().attr('src', './dali_7_9.jpg');
+    $('#correctAns').attr('src', './dali_7_9.jpg').show();
     mssg.append(sc79);
     mssg.append(skip);
   }
